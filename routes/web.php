@@ -15,7 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    echo Invoice::companyName();
+    echo "<br />";
+    echo Invoice::currentDate();
+
 });
 
 

@@ -194,7 +194,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        App\Providers\InvoiceServiceProvider::class,
     ],
 
     /*
@@ -211,6 +211,7 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
         'Datatables' => Yajra\Datatables\Facades\Datatables::class,
+        'Invoice' => App\Facades\InvoiceFacade::class,
 
     ])->toArray(),
 
